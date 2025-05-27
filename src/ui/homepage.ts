@@ -1,7 +1,13 @@
-// BREAKING A RULE! SHOULD NOT ACCESS DB LAYER DIRECTLY
-//import { openDB } from '../database/database-helper';
+// Now following architectural rules by using the service layer
+//import { DatabaseService } from '../services/database-service';
+
+// violate the rule
+import { openDB } from '../database/database-helper';
 
 export const homepage = () => {
-	// for fun
-	//openDB();
+	// Using service layer instead of direct database access
+	//DatabaseService.getInstance().openDatabase();
+
+	// violate the rule
+	openDB();
 };
