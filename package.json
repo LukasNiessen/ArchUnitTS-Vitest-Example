@@ -14,7 +14,7 @@
 	"type": "commonjs",
 	"devDependencies": {
 		"@vitest/coverage-v8": "^2.0.4",
-		"archunit": "^2.1.6",
+		"archunit": "^2.1.8",
 		"typescript": "^5.8.3",
 		"vitest": "^2.0.4"
 	}
