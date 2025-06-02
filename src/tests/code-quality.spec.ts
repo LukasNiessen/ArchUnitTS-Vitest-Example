@@ -8,8 +8,7 @@ describe('Code Quality Rules', () => {
 	});
 
 	it('ui classes should have high cohesion', async () => {
-		// violation on purpose, below 0 will always fail
-		const rule = metrics().inFolder('ui').lcom().lcom96b().shouldBeBelow(0);
+		const rule = metrics().inFolder('ui').lcom().lcom96b().shouldBeBelow(0.3);
 		await expect(rule).toPassAsync();
 	});
 

@@ -13,7 +13,7 @@
 	"license": "ISC",
 	"type": "commonjs",
 	"devDependencies": {
-		"archunit": "^2.1.9",
+		"archunit": "^2.1.17",
 		"@vitest/coverage-v8": "^2.0.4",
 		"typescript": "^5.8.3",
 		"vitest": "^2.0.4"

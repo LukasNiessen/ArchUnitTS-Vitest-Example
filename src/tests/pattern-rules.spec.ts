@@ -7,7 +7,7 @@ describe('Pattern Rules', () => {
 		const rule = projectFiles()
 			.inFolder('services')
 			.should()
-			.matchPattern('.*-service\\.ts');
+			.matchFilename('*-service.ts');
 
 		await expect(rule).toPassAsync();
 	});

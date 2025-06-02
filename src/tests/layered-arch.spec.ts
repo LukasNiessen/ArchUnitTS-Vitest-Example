@@ -45,8 +45,7 @@ describe('architecture', () => {
 	});
 
 	it('ui should match pattern', async () => {
-		// Violation on purpose (should be "ts" at the end)
-		const rule = projectFiles().inFolder('ui').should().matchPattern('.*\\.tts');
+		const rule = projectFiles().inFolder('ui').should().matchPattern('*.ts');
 		await expect(rule).toPassAsync();
 	});
 });
